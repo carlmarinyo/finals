@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  background-image: url("../assets/login-background.jpg");
+  height: 100vh;
+  filter: brightness(0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-box {
+  background-color: white;
+  min-height: 30em;
+  width: 50em;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgb(71, 92, 185),
+    0px 0px 60px rgb(64, 79, 145),
+    0px 0px 90px rgb(59, 71, 124),
+    0px 0px 120px rgb(59, 51, 103);
+  display: flex;
+  overflow: hidden;
+}
+
+.login-inside {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  flex: 1;
+  padding: 20px;
+  display: none;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+}
+
+button {
+  background-color: rgb(72, 100, 222);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  cursor: pointer;
+  margin: 5% auto;
+}
+
+
+
+.button-container {
+  display: flex;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 90%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+}
+
+.active {
+  background-color: #333;
+}
+
+.pnr-image {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/65/Tutuban_PNR_station_%28v2%29_8000_class_2019-12-21.jpg");
+  background-size: cover;
+ background-position: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  filter: brightness(0.5);
+  flex: 1;
+  transition: ease-in 0.5s;
+}
+.login-inside form label.reg-label {
+  text-align: left;
+}
+
+
+
+.button-container button {
+  flex: 1;
+  margin: 0;
+  padding: 8px;
+  background-color: rgb(72, 100, 222);
+  border: 1px solid #000;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1em;
+  transition: 1.5s;
+}
+
+#login-btn {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+#register-btn {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+.login-button {
+  background-color: rgb(72, 100, 222);
+    color: white;
+    height: 2.5em;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out; 
+    width: 20%;
+    height: 3em;
+    margin-top: 5%;
+    margin-left: 80%;
+    transition: ease-in-out 0.3s;
+}
+
+.login-button:hover {
+  background-color: rgb(37, 48, 100);
+}
+
+.input-with-icon {
+  position: relative;
+
+}
+
+.input-with-icon input {
+  padding-left: 40px; /* Modified property */
+}
+
+.input-with-icon i {
+  position: absolute;
+  top: 50%;
+  left: 10px; 
+  transform: translateY(-50%);
+  color: #212271; 
+}
+
+
+.register-button {
+  background-color: rgb(72, 100, 222);
+  color: white;
+  height: 2.5em;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out; 
+  width: 20%;
+  height: 3em;
+  margin-left: 80%;
+}
+
+.register-button:hover {
+  background-color: rgb(37, 48, 100);
+}
+.login-inside form label {
+  text-align: left;
+}
+
+/* HOME PAGE STYLINGS */
+.nav-bar {
+  background-color: rgb(22, 22, 22);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  color: white;
+}
+
+.nav-bar .logo {
+  flex: 0 0 auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .logo img {
+  max-height: 50px; 
+  max-width: 100%;
+}
+.nav-bar .links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar .links a {
+  color: rgb(72, 100, 222);
+  text-decoration: none;
+  padding: 5px;
+  margin: 0 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.links a {
+  color: rgb(72, 100, 222);
+  text-decoration: none;
+  padding: 5px;
+  margin: 0 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.links a:hover, .nav-bar .logout-btn:hover {
+  text-decoration: underline;
+  color: white;
+  transition:0.5s ease-in-out;
+}
+.nav-bar .logout-btn {
+  margin-left: auto;
+  font-family: "Poppins", sans-serif;
+  color: rgb(72, 100, 222);
+  text-decoration: none;
+}
+
+
+.home-one {
+  background-image: linear-gradient(to top, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0)), url(../assets/home-bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.username {
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 4em; 
+}
+
+span {
+  color: rgb(255, 204, 0);
+}
+
+
+.home-two {
+  background-color: rgb(22, 22, 22);
+  height: 100vh;
+}
+
+
+::-webkit-scrollbar {  /*For scroller   */
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #3686ff);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: linear-gradient(transparent, #8c03fc);
+}
+
+input:focus {
+  
+  border-radius: 5px;
+}
