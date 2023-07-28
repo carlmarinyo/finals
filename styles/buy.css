@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+body,
+        html {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+            
+          
+            background: linear-gradient(294deg, rgba(10,24,48,1) 0%, rgba(11,19,20,1) 100%);
+            height: 100vh;
+        }
+
+        .nav-bar {
+            background: linear-gradient(122deg, rgba(2, 0, 36, 1) 0%, rgba(36, 75, 83, 1) 100%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .nav-bar .logo {
+            flex: 0 0 auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-bar .logo img {
+            max-height: 50px;
+            max-width: 100%;
+        }
+
+        .nav-bar .links {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-bar .links a {
+            color: rgb(54, 66, 119);
+            text-decoration: none;
+            padding: 5px;
+            margin: 0 10px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .links a {
+            color: rgb(122, 143, 238);
+            text-decoration: none;
+            padding: 5px;
+            margin: 0 10px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .links a:hover,
+        .links a span:hover,
+        .nav-bar .logout-btn:hover {
+            text-decoration: underline;
+            color: white;
+            transition: 0.5s ease-in-out;
+        }
+
+        .nav-bar .logout-btn {
+            margin-left: auto;
+            font-family: "Poppins", sans-serif;
+            color: rgb(122, 143, 238);
+            text-decoration: none;
+        }
+
+       
+
+        a span {
+            color: rgb(122, 143, 238);
+        }
+
+        .ticket-wrapper {
+          
+            max-width: 900px; /* Adjust the value as per your desired width */
+            min-height: 500px;
+            border-radius: 16px;
+            display: flex;
+           
+            margin: 5% auto; /* Add this to horizontally center the element */
+            background-position: center;
+          }
+        
+        
+        .ticket-wrapper h1{
+            font-size: 30px;
+        }
+       
+        .wrapper-inside {
+            margin: 5%;
+            background-color: yellow;
+        }
+        select {
+          width: 150px;
+          font-size: 30px;
+          border-radius: 4px;
+          appearance: none;
+          background-color: rgb(104, 164, 220);
+          text-align: center;
+          font-family: 'Mulish', sans-serif;
+          color: rgb(0, 28, 85);
+        }
+    
+
+
+          option {
+            background-color: rgb(22, 22, 22);
+            color: white;
+            font-family: 'Mulish', sans-serif;
+          }
+
+    
+          .left-wrapper { 
+            background: linear-gradient(45deg, rgba(0,30,82,1) 0%, rgba(0,73,82,1) 100%);
+            width: 80%
+          }
+
+          .left-wrapper h1 {
+            color: #EBF1FC;
+            margin: 10%;
+          }
+
+          .left-wrapper select {
+            margin: 0 5%;
+            width: 90%;
+            padding: 20px
+          } 
+
+          select:hover {
+           cursor: pointer;
+          }
+
+          .left-wrapper input {
+            padding: 10px;
+            width: 100px;
+            margin: 5% 75%;
+            font-family: 'Mulish', sans-serif;
+            cursor: pointer;
+            transition: ease-in-out 0.5s;
+          }
+
+    
+
+          .right-wrapper {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../assets/PNR_Metro_Commuter_map_2020.svg.png);
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+}
+
+.heading-ticket {
+  background: linear-gradient(45deg, rgba(159,191,255,1) 0%, rgba(32,92,99,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Kanit', sans-serif;
+}

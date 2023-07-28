@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background: linear-gradient(294deg, rgba(10, 24, 48, 1) 0%, rgba(11, 19, 20, 1) 100%);
+    height: 100vh;
+}
+
+.nav-bar {
+    background: linear-gradient(122deg, rgba(2, 0, 36, 1) 0%, rgba(36, 75, 83, 1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.nav-bar .logo {
+    flex: 0 0 auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .logo img {
+    max-height: 50px;
+    max-width: 100%;
+}
+
+.nav-bar .links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar .links a {
+    color: rgb(54, 66, 119);
+    text-decoration: none;
+    padding: 5px;
+    margin: 0 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.links a {
+    color: rgb(122, 143, 238);
+    text-decoration: none;
+    padding: 5px;
+    margin: 0 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.links a:hover,
+.links a span:hover,
+.nav-bar .logout-btn:hover {
+    text-decoration: underline;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-bar .logout-btn {
+    margin-left: auto;
+    font-family: "Poppins", sans-serif;
+    color: rgb(122, 143, 238);
+    text-decoration: none;
+}
+
+a span {
+    color: rgb(122, 143, 238);
+}
+
+.ticket-wrapper {
+    color: white;
+    
+
+    background: linear-gradient(45deg, rgba(0,30,82,1) 0%, rgba(0,73,82,1) 100%);
+    width: 800px; /* Adjust the value as per your desired width */
+    max-width: 100%;
+    min-height: auto; /* Updated value to allow dynamic height */
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto; /* Add this to horizontally center the element */
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px; /* Add the desired margin-bottom value */
+}
+
+
+.ticket-outside {
+    color: white;
+    font-size: 30px;
+    margin: 2%;
+    text-align: center;
+}
+
+.back {
+    font-size: 25px;
+    color: white;
+}
+
+.wrapper-inside {
+   
+    color: white;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin: 5%;
+}
+.ticket-info {
+    font-size: 25px;
+    border-bottom: 1px solid white; /* Add this line to create a line separator */
+    text-align: center;
+    width: 80%;
+ 
+}
+.delete-button {
+    background-color: rgb(74, 95, 157);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+width: 30%;
+    margin-bottom: 5%;
+    transition: ease-in-out 0.5s;
+}
+.delete-button:hover {
+    background-color: rgb(30, 39, 60);
+    color: white;
+}
+
+.loading-container {
+    position: relative;
+  }
+  
+  .loading-container #loading-animation {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .error a {
+    color:  rgb(54, 82, 107);
+    font-size: 25px;
+    background-color: rgb(121, 190, 255);
+    padding: 20px;
+    border-radius: 16px;
+    text-decoration: none;
+    border: solid 1px black;
+    transition: ease-in-out 0.3s;
+  }
+
+  .error a:visited {
+    color: rgb(54, 82, 107);
+  }
+
+  .error a:hover {
+    background-color: rgb(0, 126, 237);;
+    color:  rgb(124, 192, 255);
+  }
+
+  .tickets {
+font-size: 50px;
+    background: linear-gradient(45deg, rgba(159,191,255,1) 0%, rgba(32,92,99,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Kanit', sans-serif;
+  }
+  .error-one {
+    font-size: 50px;
+  }

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+body,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.nav-bar {
+  background: linear-gradient(122deg, rgba(2, 0, 36, 1) 0%, rgba(36, 75, 83, 1) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.nav-bar .logo {
+  flex: 0 0 auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .logo img {
+  max-height: 50px;
+  max-width: 100%;
+}
+
+.nav-bar .links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar .links a {
+  color: rgb(54, 66, 119);
+  text-decoration: none;
+  padding: 5px;
+  margin: 0 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.links a {
+  color: rgb(122, 143, 238);
+  text-decoration: none;
+  padding: 5px;
+  margin: 0 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.links a:hover,
+.links a span:hover,
+.nav-bar .logout-btn:hover {
+  text-decoration: underline;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-bar .logout-btn {
+  margin-left: auto;
+  font-family: "Poppins", sans-serif;
+  color: rgb(122, 143, 238);
+  text-decoration: none;
+}
+
+.home-one {
+  background-image: linear-gradient(to top, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0)), url(../assets/home-bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.advisory {
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  animation: moveRightToLeft 10s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.advisory h1 {
+  margin: 0;
+  color: red;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.username {
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 4em;
+}
+
+span {
+  color: rgb(121, 190, 255);
+}
+
+.home-two {
+
+background: linear-gradient(294deg, rgba(10,24,48,1) 0%, rgba(11,19,20,1) 100%);
+  height: 100vh;
+}
+
+.wrapper-two {
+  position: absolute;
+  min-height: 70vh;
+  width: 90%;
+  display: flex;
+  margin: 10% 5%;
+}
+
+.wrapper-box {
+  background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 106, 128, 1) 100%);
+  height: 50vh;
+  width: 30%;
+  margin: 0 auto;
+  border: solid 2px;
+  border-radius: 10px;
+}
+
+.box-inside {
+  color: white;
+  text-align: center;
+  margin: 5%;
+  font-family: "Poppins", sans-serif;
+}
+
+.box-inside h1 {
+  color: white;
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 100px);
+  }
+}
+
+a span {
+  color: rgb(122, 143, 238);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #3686ff);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #8c03fc);
+}
+
+/* For ticketing */
+
+.ticket-wrapper {
+  position: absolute;
+  min-height: 70vh;
+  width: 90%;
+  display: flex;
+  margin: 10% 5%;
+}
+
+/* Footer */
+
+.footer {
+  background-color: rgb(22,22,22);
+
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  overflow-x: auto;
+
+}
+
+.footer-content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer-section {
+
+  padding: 10px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footer-section h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
