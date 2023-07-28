@@ -14,6 +14,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
         return $data;
     }
 
+    
     $uname = validate($_POST['uname']); // Clean the provided username
     $pass = validate($_POST['password']); // Clean the provided password
 
@@ -30,6 +31,9 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 
         if (mysqli_num_rows($result) === 1) { // Check if exactly one row is returned
             $row = mysqli_fetch_assoc($result); // Fetch the row data
+            $user_id = $row['user_id'];
+            $_SESSION['user_id'] = $user_id;
+
 
             if ($row['user_name'] === $uname && $row['password'] === $pass) { // Check if the stored username and password match the provided values
                 $_SESSION['user_name'] = $row['user_name']; // Store the username in a session variable

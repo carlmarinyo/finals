@@ -45,3 +45,29 @@ function toggleRegisterForm() {
 toggleLoginForm();
 loginBtn.addEventListener("click", toggleLoginForm);
 registerBtn.addEventListener("click", toggleRegisterForm);
+
+
+ function confirmDelete(ticketID) {
+        if (confirm("Are you sure you want to delete this ticket?")) {
+            // If the user confirms the deletion, submit the form to delete_ticket.php
+            var form = document.createElement("form");
+            form.method = "post";
+            form.action = "delete_ticket.php";
+
+            var input = document.createElement("input");
+            input.type = "hidden";
+            input.name = "ticketID";
+            input.value = ticketID;
+
+            var deleteButton = document.createElement("button");
+            deleteButton.type = "submit";
+            deleteButton.name = "deleteTicket";
+            deleteButton.innerText = "Delete Ticket";
+
+            form.appendChild(input);
+            form.appendChild(deleteButton);
+            document.body.appendChild(form);
+            form.submit();
+        }
+    }
+
