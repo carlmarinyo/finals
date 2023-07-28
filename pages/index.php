@@ -34,7 +34,7 @@
                  <!-- Submits the username and password to be checked in login.php -->
                 <button class=login-button type="submit">Login</button>
             </form>
-           
+        
         </div>
 
         <div class="login-inside" id="register-form" style="display: none;" data-aos="fade-up">
