@@ -8,6 +8,6 @@ $db_name = "user_test";
 
 $conn = mysqli_connect($sname, $unmae, $password, $db_name);
 
-if ($conn) {
-	echo "Connection success!";
+if (!$conn) {
+	echo "Connection failed!";
 }
